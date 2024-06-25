@@ -9,10 +9,6 @@ from time import sleep
 # Load environment variables
 load_dotenv()
 
-# Ollama-specific environment variables
-os.environ['OLLAMA_NUM_PARALLEL'] = '4'
-os.environ['OLLAMA_MAX_LOADED_MODELS'] = '4'
-
 API_KEY = os.getenv("API_KEY")
 API_BASE = os.getenv("API_BASE")
 API_KEY_2 = os.getenv("API_KEY_2")
